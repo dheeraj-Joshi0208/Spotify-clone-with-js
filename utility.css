@@ -1,0 +1,136 @@
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.text-start {
+  text-align: start;
+}
+
+.rounded {
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.rounded-full {
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.full-width {
+  width: 100vw;
+}
+
+.bg-dark {
+  background-color: hsl(0, 0%, 10%);
+}
+
+.bg-black {
+  background-color: hsl(0, 0%, 0%);
+}
+
+.bg-gray {
+  background-color: hsl(0, 0%, 15%);
+}
+
+.text-white {
+  color: hsl(0, 0%, 100%);
+}
+
+.opacity-low {
+  opacity: 0.8;
+}
+
+.padding {
+  padding: 1.8rem;
+}
+
+.padding-top {
+  padding-top: 1rem;
+}
+
+.padding-left {
+  padding-bottom: 1rem;
+}
+
+.margin {
+  margin: 0.7rem;
+}
+
+.margin-right {
+  margin-right: 1rem;
+}
+
+.margin-bottom {
+  margin-bottom: 1.5rem;
+}
+
+.margin-top {
+  margin-top: 0.8rem;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflow-x {
+  overflow-x: auto;
+}
+
+.overflow-y {
+  overflow-y: auto;
+}
+
+.font-lg {
+  font-size: 2rem;
+}
+
+.font-md {
+  font-size: 1.8rem;
+}
+
+.font-sm {
+  font-size: 1.5rem;
+}
+
+.font-xs {
+  font-size: 0.5rem;
+}
+
+.pointer {
+  cursor: pointer;
+}

@@ -1,0 +1,114 @@
+@font-face {
+  font-family: regular;
+  src: url(./SpotifyMixUI-Regular.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: regular;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+i {
+  cursor: pointer;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+
+.sidebar {
+  width: 40rem;
+  height: 88.2vh;
+}
+
+.sidebar_header {
+  height: 16rem;
+}
+
+.logo {
+  padding-top: 1rem;
+  margin-left: 0.7rem;
+}
+
+.nav_container {
+  padding: 0.5rem 0.75rem;
+}
+
+.nav_items {
+  line-height: 2.5rem;
+}
+
+.nav_items:hover {
+  opacity: 1;
+}
+
+.nav_items i {
+  line-height: 1.5rem;
+  font-size: 2rem;
+}
+
+.nav_items a {
+  margin-left: 0.8rem;
+}
+
+.library-container {
+  margin-top: -8px;
+  justify-content: center;
+  position: relative;
+  height: 64vh;
+}
+
+.liberary {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.terms-section {
+  position: absolute;
+  bottom: 0;
+  height: 25vh;
+  width: 100%;
+}
+
+.terms-section span {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.main_content {
+  flex: 1;
+  height: 88vh;
+}
+
+.border {
+  padding: 0.4rem 1rem;
+  border: 1px solid #eee;
+  font-size: 1.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.music_player {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 10vh;
+  background-color: hsl(0, 0%, 15%);
+}
