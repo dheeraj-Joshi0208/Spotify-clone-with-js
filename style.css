@@ -13,6 +13,27 @@
   font-size: 1.6rem;
 }
 
+/* Hide scrollbar but allow scrolling */
+.scrollable-container {
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #888 #f1f1f1;
+}
+
+/* WebKit Browsers */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: hsl(0, 0%, 10%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(0, 0%, 53%);
+  border-radius: 4px;
+}
+
+
 i {
   cursor: pointer;
 }
@@ -23,6 +44,7 @@ body {
   background-color: hsl(0, 0%, 0%);
   color: hsl(0, 0%, 100%);
   overflow: hidden;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -68,21 +90,21 @@ a {
 .library-container {
   margin-top: -8px;
   justify-content: center;
-  position: relative;
   height: 64vh;
+  position: relative;
 }
 
-.liberary {
-  position: absolute;
-  top: 0;
+.playlist {
+  border-radius: 0.5rem;
+  color: hsl(0, 0%, 100%);
   width: 100%;
+  max-height: 30vh;
 }
 
 .terms-section {
   position: absolute;
-  bottom: 0;
-  height: 25vh;
   width: 100%;
+  bottom: 0;
 }
 
 .terms-section span {
