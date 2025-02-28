@@ -33,7 +33,6 @@
   border-radius: 4px;
 }
 
-
 i {
   cursor: pointer;
 }
@@ -117,9 +116,18 @@ a {
   height: 88vh;
 }
 
-.border {
+.border-transparent {
   padding: 0.4rem 1rem;
   border: 1px solid #eee;
+  font-size: 1.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.border-white {
+  padding: 0.6rem 1rem;
+  border: none;
   font-size: 1.8rem;
   font-weight: 500;
   cursor: pointer;

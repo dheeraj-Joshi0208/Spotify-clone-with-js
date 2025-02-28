@@ -63,6 +63,10 @@
   background-color: hsl(0, 0%, 15%);
 }
 
+.bg-white {
+  background-color: hsl(0, 0%, 100%);
+}
+
 .text-white {
   color: hsl(0, 0%, 100%);
 }
