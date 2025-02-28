@@ -84,7 +84,7 @@
 }
 
 .padding-left {
-  padding-bottom: 1rem;
+  padding-left: 1.8rem;
 }
 
 .margin {
@@ -120,19 +120,23 @@
 }
 
 .font-lg {
-  font-size: 2rem;
-}
-
-.font-md {
   font-size: 1.8rem;
 }
 
+.font-md {
+  font-size: 1.4rem;
+}
+
 .font-sm {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .font-xs {
-  font-size: 0.5rem;
+  font-size: 0.75rem;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .pointer {
