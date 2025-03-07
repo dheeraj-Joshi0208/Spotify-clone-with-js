@@ -1,6 +1,11 @@
 @font-face {
-  font-family: regular;
+  font-family: SpotifyMixUI-Regular;
   src: url(./SpotifyMixUI-Regular.ttf);
+}
+
+@font-face {
+  font-family: NeueMachina-Regular;
+  src: url(./Fonts/NeueMachina-Regular.ttf);
 }
 
 * {
@@ -8,7 +13,7 @@
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: regular;
+  font-family: NeueMachina-Regular;
   font-weight: 400;
 }
 
@@ -153,7 +158,6 @@ a {
 }
 
 .card-container {
-  margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(165px, 1fr));
   gap: 20px;
@@ -180,4 +184,24 @@ a {
   right: 0;
   height: 10vh;
   background-color: hsl(0, 0%, 15%);
+}
+
+.playbar {
+  width: 320px;
+}
+
+
+button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#progress-bar {
+  width: 100%;
+  height: 5px;
+  background: #fff;
+  cursor: pointer;
 }

@@ -34,11 +34,6 @@
                 <div class="library flex-space-between opacity-low padding">
                     <div class="flex-between">
                         <div class="flex-center gap-1">
-                            <svg width="30" height="30" role="img" aria-hidden="true" viewBox="0 0 24 24">
-                                <path
-                                    d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z">
-                                </path>
-                            </svg>
                             <span class="pointer">Your Library</span>
                         </div>
                         <div><i class="ri-add-fill"></i></div>
@@ -83,23 +78,23 @@
         <div class="main_content rounded overflow-y font-lg">
             <div class="header bg-gray flex-between padding">
                 <div class="flex gap-1">
-                    <div class="arrow-circle bg-dark flex-center">
+                    <div class="arrow-circle bg-dark flex-justify-center">
                         <i class="ri-arrow-left-s-line"></i>
                     </div>
-                    <div class="arrow-circle bg-dark flex-center">
+                    <div class="arrow-circle bg-dark flex-justify-center">
                         <i class="ri-arrow-right-s-line"></i>
                     </div>
                 </div>
                 <div class="btn-container flex gap-1">
                     <button class="border-transparent rounded-full text-white font-sm">Sign Up</button>
-                    <button class="border-white rounded-full font-sm">Log In</button>
+                    <button class="border-white rounded-full font-sm bg-black">Log In</button>
                 </div>
             </div>
             <div class="spotify-playlist flex-column gap-1 padding-left full-height margin-top">
-                <h1 class="bold">Spotify Playlist</h1>
+                <h1 class="bold">Playlist</h1>
                 <div class="card-container">
                     <div class="card rounded bg-gray">
-                        <img src="Sanam Teri Kasam.jpg" alt="song" />
+                        <img src="Assets/Sanam Teri Kasam.jpg" alt="song" />
                         <div class="card-discription">
                             <h2 class="font-lg bold">Sanam Teri Kasam</h2>
                             <p class="font-md">Himesh Reshammiya, Sameer Anjaan</p>
@@ -108,7 +103,13 @@
                 </div>
             </div>
         </div>
-        <div class="music_player padding"></div>
+        <div class="music_player flex-justify-center padding">
+            <div class="playbar flex-justify-center gap-1">
+                <button class="arrow-circle bg-black" id="prev"><i class="ri-skip-back-fill"></i></button>
+                <button class="arrow-circle bg-black" id="play-pause"><i class="ri-play-fill"></i></button>
+                <button class="arrow-circle bg-black" id="next"><i class="ri-skip-forward-fill"></i></button>
+            </div>
+        </div>
 
         <script src="./index.js"></script>
 </body>
