@@ -8,6 +8,11 @@
   src: url("./Fonts/NeueMachina-Regular.ttf");
 }
 
+.library-svg {
+  width: 24px;
+  height: 24px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +20,18 @@
   font-family: "NeueMachina", sans-serif;
 }
 
-body {
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
   background-color: black;
   color: white;
 }
@@ -27,27 +43,17 @@ body {
 
 /* Sidebar */
 .sidebar {
-  width: 300px;
-  background: #121212;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  width: 320px;
+  height: 92vh;
+  padding: 1.5rem 1.5rem;
+  position: relative;
 }
 
 .sidebar__header img {
-  width: 150px;
-}
-
-.sidebar__nav {
-  margin-top: 20px;
+  width: 120px;
 }
 
 .nav__item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px;
   color: white;
   opacity: 0.8;
   transition: opacity 0.3s;
@@ -62,23 +68,24 @@ body {
   margin-top: 20px;
 }
 
+.playlist {
+  margin-top: 1rem;
+}
+
 .playlist__item {
-  background: #181818;
-  padding: 15px;
-  border-radius: 8px;
-  margin-bottom: 10px;
+  padding: 1rem;
+}
+
+.sidebar__footer {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
 }
 
 /* Main Content */
 .main-content {
   flex: 1;
   padding: 20px;
-}
-
-.main-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .playlist-section {
@@ -101,8 +108,15 @@ body {
 .btn {
   border: none;
   padding: 10px 15px;
+  margin-top: 1rem;
   cursor: pointer;
   font-size: 14px;
+  font-weight: bold;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
 }
 
 .btn--white {
@@ -113,6 +127,108 @@ body {
 .btn--transparent {
   background: transparent;
   color: white;
+}
+
+.btn--transparent-border {
+  padding: 10px 15px;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 50px;
+}
+/* Container for the playlist grid */
+.playlist-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.nav-btn {
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+/* Playlist card styling */
+.playlist-card {
+  margin-top: 2rem;
+  min-width: 180px;
+  width: 160px;
+  padding: 15px;
+  background-color: #181818;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  text-align: start;
+}
+
+/* Hover effect on playlist card */
+.playlist-card:hover {
+  background-color: #252525;
+}
+
+/* Image inside the playlist card */
+.playlist-card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/* Play button styling */
+.playlist-card .play {
+  position: relative;
+}
+
+/* Play icon styling */
+.playlist-card .play .ri-play-large-fill {
+  position: absolute;
+  right: 10px;
+  top: -60px;
+  padding: 18px;
+  background-color: #1db954;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+/* Show play icon on hover */
+.playlist-card:hover .play .ri-play-large-fill {
+  opacity: 1;
+  transform: translateY(-20px);
+}
+
+/* Title styling */
+.playlist-card h4 {
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Description text styling */
+.playlist-card p {
+  color: #989898;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+/* Separator line */
+.playlist-grid hr {
+  margin: 70px 0 0;
+  border-color: #636363;
 }
 
 /* Music Player */

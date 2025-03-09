@@ -2,77 +2,82 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Spotify - Web Player: Listen to your favorite music online.">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Spotify - Web Player: Listen to your favorite music online." />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Spotify - Web Player</title>
 
     <!-- Remix Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" />
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
 </head>
 
 <body>
-    <div class="container">
+    <div class="container flex full-height padding">
         <!-- Sidebar -->
-        <aside class="sidebar">
-            <div class="sidebar__header">
-                <img src="Assets/logo.svg" alt="Spotify Logo" class="sidebar__logo">
-                <nav class="sidebar__nav">
-                    <a href="#" class="nav__item"><i class="ri-home-5-fill"></i> Home</a>
-                    <a href="#" class="nav__item"><i class="ri-search-line"></i> Search</a>
+        <aside class="sidebar bg-gray margin-right rounded">
+            <div class="sidebar__header flex-column justify-center gap-1 bg-gray margin-bottom rounded">
+                <img src="Assets/logo.svg" alt="Spotify Logo" class="sidebar__logo" />
+                <nav class="sidebar__nav padding">
+                    <a href="#" class="nav__item flex-center gap-1 padding font-sm"><i class="ri-home-5-fill"></i>
+                        Home</a>
+                    <a href="#" class="nav__item flex-center gap-1 padding font-sm"><i class="ri-search-line"></i>
+                        Search</a>
                 </nav>
             </div>
 
-            <section class="library">
-                <div class="library__header">
+            <section class="library margin-bottom">
+                <div class="library__header flex-between font-md">
                     <span>Your Library</span>
                     <i class="ri-add-fill"></i>
                 </div>
-                <div class="playlist">
-                    <div class="playlist__item">
-                        <h4>Create your first playlist</h4>
-                        <p>It's easy, we'll help you</p>
+                <div class="playlist flex-column gap-1 overflow-x">
+                    <div class="playlist__item bg-dark rounded">
+                        <h4 class="font-sm">Create your first playlist</h4>
+                        <p class="font-xs opacity-low margin-top">It's easy, we'll help you</p>
                         <button class="btn btn--white">Create Playlist</button>
                     </div>
-                    <div class="playlist__item">
-                        <h4>Let's find some podcasts</h4>
-                        <p>We'll keep you updated on new episodes</p>
+                    <div class="playlist__item bg-dark rounded">
+                        <h4 class="font-sm">Let's find some podcasts</h4>
+                        <p class="font-xs opacity-low margin-top">We'll keep you updated on new episodes</p>
                         <button class="btn btn--white">Browse Podcasts</button>
                     </div>
                 </div>
             </section>
 
-            <footer class="sidebar__footer">
-                <nav>
-                    <a href="#">Legal</a>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Cookies</a>
+            <footer class="sidebar__footer padding flex-column ">
+                <nav class="flex gap-1">
+                    <a href="#" class="font-sm text-white">Legal</a>
+                    <a href="#" class="font-sm text-white">Privacy Policy</a>
+                    <a href="#" class="font-sm text-white">Cookies</a>
                 </nav>
-                <div class="margin-top flex gap-1">
-                    <span>About Ads</span>
-                    <span>Accessibility</span>
+                <div class="flex gap-1 margin-top opacity-low">
+                    <span><a class="text-white opacity-low font-xs" href="">About Ads</a></span>
+                    <span><a class="text-white opacity-low font-xs" href="">Accessibility</a></span>
                 </div>
                 <br />
                 <div class="text-start">
-                    <button class="border-transparent rounded-full bg-black text-white font-sm flex">
+                    <button class="btn--transparent-border flex-center">
                         <i class="ri-global-fill"></i> English
                     </button>
                 </div>
-                <button class="btn btn--black"><i class="ri-global-fill"></i> English</button>
             </footer>
         </aside>
 
         <!-- Main Content -->
         <main class="main-content">
-            <header class="main-header">
-                <div class="navigation">
-                    <button class="nav-btn"><i class="ri-arrow-left-s-line"></i></button>
-                    <button class="nav-btn"><i class="ri-arrow-right-s-line"></i></button>
+            <header class="top-bar flex-between">
+                <div class="navigation flex gap-1">
+                    <button class="nav-btn bg-gray rounded">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </button>
+                    <button class="nav-btn bg-gray rounded">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </button>
                 </div>
                 <div class="auth-buttons">
                     <button class="btn btn--transparent">Sign Up</button>
@@ -84,25 +89,30 @@
                 <h1>Playlist</h1>
                 <div class="playlist-grid">
                     <div class="playlist-card">
-                        <img src="Assets/Sanam Teri Kasam.jpg" alt="Sanam Teri Kasam Song Cover">
-                        <div class="playlist-card__info">
-                            <h2>Sanam Teri Kasam</h2>
-                            <p>Himesh Reshammiya, Sameer Anjaan</p>
+                        <img src="./Assets/Sanam Teri Kasam.jpg" alt="Sanam Teri Kasam" />
+                        <div class="play">
+                            <i class="ri-play-large-fill"></i>
                         </div>
+                        <h4>Sanam Teri Kasam</h4>
+                        <p>Himesh Reshammiya, Sammer Anjaan, Subrat Sinha</p>
                     </div>
                 </div>
             </section>
         </main>
 
         <!-- Music Player -->
-        <footer class="music-player">
-            <div class="player-controls">
-                <button class="player-btn"><i class="ri-skip-back-fill"></i></button>
-                <button class="player-btn" id="play-pause"><i class="ri-play-fill"></i></button>
-                <button class="player-btn"><i class="ri-skip-forward-fill"></i></button>
-            </div>
-        </footer>
     </div>
+    <footer class="music-player">
+        <div class="player-controls">
+            <button class="player-btn"><i class="ri-skip-back-fill"></i></button>
+            <button class="player-btn" id="play-pause">
+                <i class="ri-play-fill"></i>
+            </button>
+            <button class="player-btn">
+                <i class="ri-skip-forward-fill"></i>
+            </button>
+        </div>
+    </footer>
 
     <script src="index.js" defer></script>
 </body>
