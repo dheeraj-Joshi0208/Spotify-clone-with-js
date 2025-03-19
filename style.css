@@ -17,7 +17,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "NeueMachina", sans-serif;
+  font-family: "SpotifyMixUI", sans-serif;
 }
 
 a {
@@ -44,7 +44,7 @@ html {
 /* Sidebar */
 .sidebar {
   width: 320px;
-  height: 92vh;
+  height: 89vh;
   padding: 1.5rem 1.5rem;
   position: relative;
 }
@@ -108,7 +108,6 @@ html {
 .btn {
   border: none;
   padding: 10px 15px;
-  margin-top: 1rem;
   cursor: pointer;
   font-size: 14px;
   font-weight: bold;
@@ -143,19 +142,20 @@ html {
   gap: 15px;
 }
 
-.nav-btn {
+.nav-btn,
+.player-btn {
   border: none;
   color: white;
   cursor: pointer;
   font-size: 16px;
   font-weight: bold;
-  border-radius: 50%;
+  border-radius: 50px;
   width: 50px;
   height: 50px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
 }
 
 /* Playlist card styling */
@@ -237,7 +237,7 @@ html {
   bottom: 0;
   width: 100%;
   background: #181818;
-  padding: 15px;
+  padding: 10px;
   display: flex;
   justify-content: center;
 }
